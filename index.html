@@ -17,7 +17,8 @@
       flex-direction: column;
       align-items: center;
     }
-     
+    
+    
     header, section, footer {
       background: rgba(0, 0, 0, 0.85);
       padding: 1.5rem;
@@ -66,6 +67,59 @@
     footer {
       font-size: 0.9rem;
     }
+      .cta {
+      display: inline-block;
+      padding: 0.75rem 1.25rem;
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      margin-top: 1rem;
+    }
+
+    .hero-banner {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #fff;
+      padding: 4rem 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+    }
+
+    section {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    @media (max-width: 480px) {
+      header, section, footer {
+        padding: 1rem;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .media-placeholder {
+      height: 200px;
+      background: rgba(255,255,255,0.05);
+      border: 1px dashed #555;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
   </style>
 </head>
 <body>
@@ -79,24 +133,39 @@
     </nav>
   </header>
 
-  <section class="hero" id="about">
+  <section class="hero-banner fade-in">
+  <img src="damure-logo-2.png" alt="Damure Logo" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+</section>
+
+  <section class="hero fade-in" id="about">
     <h2>Sound that Moves</h2>
     <p>Damure blends deep grooves, bass-heavy rhythms, and a sharp sense for the underground. Based in Florida, he’s carving out space through intimate pop-up sets — especially in the vibrant coffee scene where creativity and community collide.</p>
-    <p>Whether it’s spinning at cafes, or small venues, Damure’s mission is to bring people together through sound. Focused on connection over clout, he's actively looking to collaborate, build reputation, and push the boundaries of where music lives.</p>
+    <p>Whether it’s spinning at cafes, warehouse corners, or small venues, Damure’s mission is to bring people together through sound. Focused on connection over clout, he's actively looking to collaborate, build reputation, and push the boundaries of where music lives.</p>
   </section>
 
-  <section id="music">
+  <section id="music" class="fade-in">
     <h2>Latest Mixes</h2>
     <p>COMING SOON<p>
   </section>
 
-  <section id="gigs">
+  <section id="gigs" class="fade-in">
     <h2>Upcoming Gigs</h2>
     <p>🔥 July 26 – Shaywood Court, Orlando</p>
-<p>🔥 TBD – SARAP Coffee, TBD</p>
+<p>🔥 August 2 – SARAP Coffee, TBD</p>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="fade-in">
+    <h2>Booking & Inquiries</h2>
+    <p><a href="mailto:book@damure.com" class="cta">Book Me</a></p>
+    <p>Instagram: <a href="https://instagram.com/dj.damure" target="_blank">@dj.damure</a></p>
+  </section>
+
+  <section id="media" class="fade-in">
+    <h2>Visuals</h2>
+    <div class="media-placeholder">
+      <p>Promo Visual Coming Soon</p>
+    </div>
+  
     <h2>Booking & Inquiries</h2>
     <p>Email: <a href="mailto:book@damure.com">book@damure.com</a></p>
     <p>Instagram: <a href="https://instagram.com/dj.damure" target="_blank">@dj.damure</a></p>
