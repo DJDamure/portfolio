@@ -48,6 +48,8 @@
     }
     section h2 {
       color: #ccc;
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
     }
     .hero {
       text-align: center;
@@ -76,6 +78,13 @@
       font-weight: bold;
       border-radius: 6px;
       margin-top: 1rem;
+      transition: all 0.2s ease;
+    }
+
+    .cta:hover {
+      background: #eee;
+      color: #000;
+      transform: scale(1.05);
     }
 
     .hero-banner {
@@ -95,6 +104,14 @@
       header, section, footer {
         padding: 1rem;
       }
+      header h1 {
+        font-size: 2rem;
+      }
+      nav {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+    }
       header h1 {
         font-size: 2rem;
       }
@@ -134,19 +151,19 @@
   </header>
 
   <section class="hero-banner fade-in">
-  <img src="damur-logo-2.png.webp" alt="Damure Logo" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <img id="rotating-logo" src="damure-logo-2.png" alt="Damure Logo" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </section>
 
   <section class="hero fade-in" id="about">
     <h2>Sound that Moves</h2>
     <p>Damure blends deep grooves, bass-heavy rhythms, and a sharp sense for the underground. Based in Florida, he’s carving out space through intimate pop-up sets — especially in the vibrant coffee scene where creativity and community collide.</p>
-    <p>Whether it’s spinning at cafes, warehouse corners, or small venues, Damure’s mission is to bring people together through sound. Focused on connection over clout, he's actively looking to collaborate, build reputation, and push the boundaries of where music lives.</p>
+    <p>Whether it’s spinning at cafes, or small venues, Damure’s mission is to bring people together through sound. Focused on connection over clout, he's actively looking to collaborate, build reputation, and push the boundaries of where music lives.</p>
   </section>
 
-  <section id="music" class="fade-in">
+  <!-- <section id="music" class="fade-in">
     <h2>Latest Mixes</h2>
-    <p>COMING SOON<p>
-  </section>
+    <p>COMING SOON</p>
+  </section> -->
 
   <section id="gigs" class="fade-in">
     <h2>Upcoming Gigs</h2>
@@ -170,5 +187,22 @@
   <footer>
     &copy; 2025 Damure. All rights reserved.
   </footer>
+<script>
+  const logoImages = [
+    'damure-logo-2.png',
+    'damure-logo-1.png',
+    'damure-logo-3.png'
+  ];
+
+  let currentIndex = 0;
+  const logoElement = document.querySelector('#rotating-logo');
+
+  if (logoElement) {
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % logoImages.length;
+      logoElement.src = logoImages[currentIndex];
+    }, 4000);
+  }
+</script>
 </body>
 </html>
