@@ -187,22 +187,7 @@
   <footer>
     &copy; 2025 Damure. All rights reserved.
   </footer>
-<script>
-  const logoImages = [
-    'damure-logo-2.png',
-    'damure-logo-1.png',
-    'damure-logo-3.png'
-  ];
 
-  let currentIndex = 0;
-  const logoElement = document.querySelector('#rotating-logo');
-
-  if (logoElement) {
-    setInterval(() => {
-      currentIndex = (currentIndex + 1) % logoImages.length;
-      logoElement.src = logoImages[currentIndex];
-    }, 4000);
-  }
-</script>
 </body>
 </html>
+
