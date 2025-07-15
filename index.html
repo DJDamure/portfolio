@@ -13,11 +13,20 @@
       font-family: 'Montserrat', sans-serif;
       background: #000 url('damure-logo.png.webp') center center / cover no-repeat fixed;
       color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
     }
-    header {
+    header, section, footer {
       background: rgba(0, 0, 0, 0.85);
       padding: 2rem;
+      width: 100%;
+      max-width: 1000px;
       text-align: center;
+      border-radius: 10px;
+      margin: 1rem;
     }
     header h1 {
       font-family: 'Orbitron', sans-serif;
@@ -30,33 +39,23 @@
       justify-content: center;
       gap: 2rem;
       margin-top: 1rem;
+      flex-wrap: wrap;
     }
     nav a {
       color: #ccc;
       text-decoration: none;
       font-weight: bold;
     }
-    section {
-      padding: 4rem 2rem;
-      max-width: 1000px;
-      margin: 0 auto;
-      background: rgba(0, 0, 0, 0.8);
-      border-radius: 10px;
+    section h2 {
+      color: #ccc;
     }
     .hero {
       text-align: center;
-    }
-    .hero img {
-      width: 250px;
-      margin-bottom: 1rem;
     }
     .hero h2 {
       color: #ccc;
       font-size: 2rem;
       margin-bottom: 0.5rem;
-    }
-    section h2 {
-      color: #ccc;
     }
     iframe {
       width: 100%;
@@ -66,9 +65,6 @@
       margin-top: 1rem;
     }
     footer {
-      background: rgba(0, 0, 0, 0.85);
-      text-align: center;
-      padding: 2rem;
       font-size: 0.9rem;
     }
   </style>
@@ -85,7 +81,6 @@
   </header>
 
   <section class="hero" id="about">
-    <img src="damure-logo-2.png.webp" alt="Damure alternate logo" />
     <h2>Sound that Moves</h2>
     <p>Damure brings deep grooves and energy-packed sets blending Bass House, Tech House, and late-night rhythms. Based in Florida, he's a rising name spinning at underground shows and coffee pop ups alike.</p>
   </section>
@@ -113,3 +108,4 @@
   </footer>
 </body>
 </html>
+
