@@ -7,133 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: #000 url('damure-background.png') center center / cover no-repeat fixed;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    
-    header, section, footer {
-      background: rgba(0, 0, 0, 0.85);
-      padding: 1.5rem;
-      width: 100%;
-      max-width: 700px;
-      text-align: center;
-      border-radius: 10px;
-      margin: 0.75rem auto;
-    }
-    header h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 3rem;
-      color: #fff;
-      margin: 0;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin-top: 1rem;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: #ccc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section h2 {
-      color: #ccc;
-      font-size: 1.75rem;
-      margin-bottom: 0.5rem;
-    }
-    .hero {
-      text-align: center;
-    }
-    .hero h2 {
-      color: #ccc;
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    iframe {
-      width: 100%;
-      max-width: 700px;
-      height: 150px;
-      border: none;
-      margin-top: 1rem;
-    }
-    footer {
-      font-size: 0.9rem;
-    }
-      .cta {
-      display: inline-block;
-      padding: 0.75rem 1.25rem;
-      background: #fff;
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 6px;
-      margin-top: 1rem;
-      transition: all 0.2s ease;
-    }
-
-    .cta:hover {
-      background: #eee;
-      color: #000;
-      transform: scale(1.05);
-    }
-
-    .hero-banner {
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: #fff;
-      padding: 4rem 1rem;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 10px;
-    }
-
-    section {
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-@media (max-width: 480px) {
-  header, section, footer {
-    padding: 1rem;
-  }
-  header h1 {
-    font-size: 2rem;
-  }
-  nav {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-}
-
-    .media-placeholder {
-      height: 200px;
-      background: rgba(255,255,255,0.05);
-      border: 1px dashed #555;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 1rem;
-    }
-
-    .fade-in {
-      opacity: 0;
-      animation: fadeIn 1s ease-in forwards;
-    }
-
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -147,7 +21,7 @@
   </header>
 
   <section class="hero-banner fade-in">
-  <img src="damure-logo-2.png.webp" alt="Damure Logo" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <img src="assets/damure-logo-2.png.webp" alt="Damure Logo" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </section>
 
   <section class="hero fade-in" id="about">
@@ -183,6 +57,8 @@
   <footer>
     &copy; 2025 Damure. All rights reserved.
   </footer>
+
+  <script src="script.js" defer></script>
 
 </body>
 </html>
